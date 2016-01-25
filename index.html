@@ -1,0 +1,30 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>一个调色板</title>
+</head>
+
+<body>
+
+
+html5新标签：<input type="color"/>
+
+
+<input type="text" value="" id="color-get01" style="position:absolute;left:100px;top:100px;" />
+<input type="button" id="btn" value="get input color" onclick = "alert(document.getElementById('color-get01').value)" style="position:absolute;left:280px;top:100px;width:98px;height:21px;" />
+
+<input type="text" value="" id="color-get02" style="position:absolute;left:500px;top:100px;"/>
+
+</body>
+</html>
+
+<script type="text/javascript" src="colorTake.js"></script>
+<script type="text/javascript">
+var colorGet01 = document.getElementById("color-get01");
+var colorGet02 = document.getElementById("color-get02");
+new colorTake(colorGet01);
+new colorTake(colorGet02);
+
+</script>
+
